@@ -1,5 +1,9 @@
 name: Build Docker Image
 on:
+  watch:
+    types: started
+  schedule:
+    - cron: '0 0 * * *' # everyday at 0+8am
   workflow_dispatch:
 jobs:
   build:
