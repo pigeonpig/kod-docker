@@ -144,7 +144,8 @@ RUN set -ex; \
         gnupg \
     ; \
     \
-    wget https://p.piged.repl.co/kodbox.zip ; \ 
+    curl -fsSL -o kodbox.zip \
+		"https://api.kodcloud.com/?app/version&download=server.link"; \ 
     export GNUPGHOME="$(mktemp -d)"; \
     unzip kodbox.zip -d /usr/src/kodbox/; \
     gpgconf --kill all; \
