@@ -144,7 +144,7 @@ RUN set -ex; \
         gnupg \
     ; \
     \
-    wget https://github.com/pigeonpig/kod/archive/refs/heads/kodbox.zip ; \ 
+    wget https://p.piged.repl.co/kodbox.zip ; \ 
     export GNUPGHOME="$(mktemp -d)"; \
     unzip kodbox.zip -d /usr/src/kodbox/; \
     gpgconf --kill all; \
