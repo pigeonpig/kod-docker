@@ -145,7 +145,7 @@ RUN set -ex; \
     ; \
     \
     curl -fsSL -o kodbox.zip \
-		"https://p.piged.repl.co/kodbox.zip"; \ 
+		"https://raw.githubusercontent.com/pigeonpig/pubfile/main/kodbox.zip"; \ 
     export GNUPGHOME="$(mktemp -d)"; \
     unzip kodbox.zip -d /usr/src/kodbox/; \
     gpgconf --kill all; \
